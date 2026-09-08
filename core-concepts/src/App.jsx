@@ -9,6 +9,8 @@ import { ContactForm } from './ContactForm';
 import { StyleFrom } from './StyleFrom';
 import { CandidateProfile } from './CandidateProfile';
 import { Product } from './Product';
+import { Greeting } from './Greeting';
+import { CardWrapper } from './CardWrapper';
 
 
 
@@ -16,6 +18,21 @@ function App() {
 
   return (
     <div>
+      <CardWrapper title= "user-profile" >
+        <p>Pritam kumar</p>
+        <p>Batman@gamil.com</p>
+        <button>Edit Profile</button>
+      </CardWrapper>
+      
+      
+      
+      <Greeting name="Pritam" message = "Good Morning" />
+      <Greeting name ="Sumit" />
+      <Greeting message = "Welcome"/>
+      <Greeting/>
+
+
+
       <Product
       // When Passing Different Type Of Data ....
        title = "Gaming Laptop" //For Striing use = " "
