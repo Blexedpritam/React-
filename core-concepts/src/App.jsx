@@ -11,6 +11,7 @@ import { CandidateProfile } from './CandidateProfile';
 import { Product } from './Product';
 import { Greeting } from './Greeting';
 import { CardWrapper } from './CardWrapper';
+import { UserDetails } from './UserDetails';
 
 
 
@@ -18,6 +19,8 @@ function App() {
 
   return (
     <div>
+      <UserDetails name = "Pritam Kumar" isOnline={true} isPremium={true} isNewUser={true} role="admin"/>
+      <UserDetails name = "Aman Kumar" isOnline={true} hideOffline={true} role="vip"/>
       <CardWrapper title= "user-profile" >
         <p>Pritam kumar</p>
         <p>Batman@gamil.com</p>
