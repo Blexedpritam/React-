@@ -12,6 +12,7 @@ import { Product } from './Product';
 import { Greeting } from './Greeting';
 import { CardWrapper } from './CardWrapper';
 import { UserDetails } from './UserDetails';
+import { ProductList } from './ProductList';
 
 
 
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div>
+      <ProductList/>
       <UserDetails name = "Pritam Kumar" isOnline={true} isPremium={true} isNewUser={true} role="admin"/>
       <UserDetails name = "Aman Kumar" isOnline={true} hideOffline={true} role="vip"/>
       <CardWrapper title= "user-profile" >
