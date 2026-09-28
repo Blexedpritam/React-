@@ -1,17 +1,40 @@
 export const ProductList = () =>{
+
+    const products = [
+        {
+            id:1,
+            name:"Laptop",
+            price:999,
+        },
+        {
+          id:2,
+          name:"Phone",
+          price:699,  
+        },
+        {
+            id:3,
+            name:"Tablet",
+            price:499,
+        },
+        {
+            id:4,
+            name:"Watch",
+            price: 299,
+        }];
+
+
+        const productElements =  products.filter((product) =>{return product.price > 500;})
+        .map((product) => {
+                return (
+                    <>
+                        <h3>{product.name}</h3>
+                        <p>Price : ${product.price}</p>
+                    </>
+                )
+            })
+
     return <div>
         <h2>Our Prooducts</h2>
-        <div>
-            <p>Laptop</p>
-            <p>Price : $999</p>
-        </div>
-        <div>
-            <p>Phone</p>
-            <p>Price : $499</p>
-        </div>
-        <div>
-            <p>Tablet</p>
-            <p>Price : $299</p>
-        </div>
+        {productElements}
     </div>
 }
